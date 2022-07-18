@@ -1,4 +1,7 @@
-.navbar ul li a{
+
+
+
+.navbar ul li a {
     color: #ffff !important;
 }
 
@@ -7,18 +10,22 @@
     color: #00FFA3;
     text-align: center;
 }
+
 #purplecenter {
     color: #DC1FFF;
     text-align: center;
 }
+
 p {
     color: #ffff;
 }
+
 .container {
     position: relative;
     color: white;
-  }
-  .text-block {
+}
+
+.text-block {
     position: absolute;
     bottom: 50px;
     left: 20px;
@@ -26,4 +33,4 @@ p {
     text-shadow: 2px 2px 2px black;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
