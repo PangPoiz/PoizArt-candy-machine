@@ -11,13 +11,20 @@
     text-align: center;
 }
 
+#cyancenter {
+    color: #03E1FF;
+    text-align: center;
+}
+
 #purplecenter {
     color: #DC1FFF;
     text-align: center;
 }
 
-p {
+#article {
     color: #ffff;
+    text-align: justify;
+    text-indent: 50px;
 }
 
 .container {
@@ -33,4 +40,5 @@ p {
     text-shadow: 2px 2px 2px black;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20px;
 }
