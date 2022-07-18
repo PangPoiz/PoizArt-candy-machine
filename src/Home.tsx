@@ -37,8 +37,8 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #0aff52 0%, #01b95c 100%);
-  color: white;
+  background: linear-gradient(180deg, #00FFA3 0%, #03E1FF 50%, #DC1FFF 100%);
+  color: black;
   font-size: 16px;
   font-weight: bold;
 `;
@@ -503,9 +503,9 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
+    <Container style={{ marginTop: 50 }}>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
-        <Paper
+        <Paper  
           style={{
             padding: 24,
             paddingBottom: 10,
