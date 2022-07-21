@@ -33,6 +33,28 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-black text-light">
       <div class="container">
@@ -56,10 +78,10 @@
               <a class="nav-link" href="#traits">Traits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#roadmap">Roadmap</a>
+              <a class="nav-link" href="#rarity">Rarity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rarity</a>
+              <a class="nav-link" href="#roadmap">Roadmap</a>
             </li>
           </ul>
         </div>
@@ -99,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="container-overview">
+  <div class="container">
     <a name="overview">
       <h1 id="cyancenter" style="padding: 5%;">Overview</h1>
     </a>
@@ -132,8 +154,7 @@
         </div>
       </div>
   </div>
-  
-    <div class="container-traits" style="
+    <div class="container" style="
     padding: 5%;">
       <a name="traits">
         <h1 id="cyancenter">Traits</h1>
@@ -144,7 +165,15 @@
       <img src="/traitsImage.png" alt="traitaimage" class="center" style="border-radius: 10px; padding-top: 3%;" />
     </div>
     
-<div class="container-roadmap">
+<div class="container">
+  <a name="rarity">
+    <h1 id="cyancenter" style="padding-top: 5%;">Rarity</h1>
+  </a>
+  <img src="/traitRarityTable.svg" alt="traitraritytable" style="
+      width: 100%;
+      padding: 5%;" />
+</div>
+<div class="container">
   <a name="roadmap">
     <h1 id="purplecenter" style="padding-top: 5%;">Roadmap</h1>
   </a>
